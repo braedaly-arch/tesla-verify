@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Tesla Auth</title></head>
+<body style="font-family:sans-serif;padding:40px">
+<h2>Tesla Auth Code</h2>
+<p>Copy this code and paste it to Jerry:</p>
+<textarea id="code" rows="3" style="width:100%;font-size:14px"></textarea>
+<script>
+  const p = new URLSearchParams(window.location.search);
+  document.getElementById('code').value = p.get('code') || 'No code found';
+</script>
+</body>
+</html>
